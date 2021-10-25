@@ -1,0 +1,24 @@
+#Task 01
+import numpy as np
+class queue:
+    def __init__(self):
+      self.elements = np.arange(4)
+    def display(self):
+      return self.elements
+    def enqueue(self,data):
+      a=np.append(self.elements,data)
+      return a
+    def dequeue(self,data):
+     b=np.delete(self.elements,1)
+     return b
+    def rear(self):
+     return self.elements[-1]
+    def front(self):
+     return self.elements[0]
+    def length(self,data):
+     return len(self.elements)
+    def isempty(self):
+     return(len(self.elements)==0)
+    def isfull(self):
+      return(len(self.elements)==1)
+    
